@@ -3,7 +3,6 @@ variable "instance_names" {
     type = list
     default = ["db","backend","frontend"]
 }
-
 variable "image_id" {
   type        = string #optional
   default     = "ami-090252cbe067a9e58" #optional
@@ -11,30 +10,27 @@ variable "image_id" {
 }
 
 variable "instance_type" {
+    default = "t3.micro"
     type = string
-    description = "t2.micro"
 }
 
 variable "common_tags" {
     default = {
-        Project = "expense"
-        Environment = "dev"
-        terraform = "true"
+        Project = "Expense"
+        Environment = "Dev"
+        Terraform = "true"
     }
-
 }
 
-# SG Veriables
+#sg variables
 variable "sg_name" {
-    type = string
     default = "allow_ssh"
-  
 }
 
 variable "sg_description" {
     default = "allowing port 22"
-  
 }
+
 variable "ssh_port" {
     default = 22
 }
@@ -47,4 +43,18 @@ variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"]
 }
+
+
+#r53 variables
+variable "zone_id" {
+    default = "Z037680029TE3IP9QSHTS"
+}
+
+variable "domain_name" {
+    default = "anuprasad.online"
+
+}
+
+
+
 
