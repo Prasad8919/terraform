@@ -1,9 +1,9 @@
 
 resource "aws_instance" "expense" {
-    count = length(var.instance_names)
+    count = length(var.instance_names) # count appiled & terraform length function used it will loop howmany we have 
     ami = var.image_id
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
-    instance_type = var.instance_names[count.index] == "db" ? "t3.small" : "t3.micro"
+    instance_type = var.instance_names[count.index] == "db" ? "t3.small" : "t3.micro"   # condition appiled
     tags = merge(
         var.common_tags,
         {
@@ -34,6 +34,6 @@ resource "aws_security_group" "allow_ssh" {
 
     tags = {
         Name = "allow_ssh"
-        CreatedBy = "Prasad"
+        CreatedBy = "Prasadb"
     }
 }

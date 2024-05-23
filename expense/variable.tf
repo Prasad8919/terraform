@@ -3,6 +3,7 @@ variable "instance_names" {
     type = list
     default = ["db","backend","frontend"]
 }
+
 variable "image_id" {
   type        = string #optional
   default     = "ami-090252cbe067a9e58" #optional
@@ -10,27 +11,30 @@ variable "image_id" {
 }
 
 variable "instance_type" {
-    default = "t3.micro"
     type = string
+    description = "t2.micro"
 }
 
 variable "common_tags" {
     default = {
-        Project = "Expense"
-        Environment = "Dev"
-        Terraform = "true"
+        Project = "expense"
+        Environment = "dev"
+        terraform = "true"
     }
+
 }
 
-#sg variables
+# SG Veriables
 variable "sg_name" {
+    type = string
     default = "allow_ssh"
+  
 }
 
 variable "sg_description" {
     default = "allowing port 22"
+  
 }
-
 variable "ssh_port" {
     default = 22
 }
@@ -44,12 +48,3 @@ variable "allowed_cidr" {
     default = ["0.0.0.0/0"]
 }
 
-
-#r53 variables
-variable "zone_id" {
-    default = "Z08884492QFPW45HM4UQO"
-}
-
-variable "domain_name" {
-    default = "daws78s.online"
-}
