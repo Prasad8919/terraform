@@ -3,5 +3,5 @@ dynamic loop
 
 Use case : creating Security group 
 
-           in security group we have to give access 80,8080,3306,22 ports
+         in security group we have to give access 80,8080,3306,22 ports
               
