@@ -1,4 +1,6 @@
 
+
+![alt text](vpc.jpg)
 Internet Gateway 
 Internet and VPC attachment
 2 Public Subnets.
@@ -14,3 +16,4 @@ Routes in all tables
 Peering if required for user
 Routes of peering in requestor and acceptor VPC.
 Database sunet group
+
