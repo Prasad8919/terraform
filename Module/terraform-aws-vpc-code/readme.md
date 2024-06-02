@@ -1,14 +1,14 @@
 
 
-![alt text](vpc.jpg)
-Internet Gateway 
-Internet and VPC attachment
-2 Public Subnets.
-2 Private Subnes
-2 Database Subnets
-EIP
+
+Internet Gateway          
+Internet and VPC attachment          
+2 Public Subnets.           
+2 Private Subnes         
+2 Database Subnets         
+EIP    
 NAT Gateway
-Public Route table
+Public Route table            
 Private Route table
 Database Route table
 Route table and subnet associations
