@@ -1,5 +1,5 @@
 
-Internet Gateway
+Internet Gateway 
 Internet and VPC attachment
 2 Public Subnets.
 2 Private Subnes

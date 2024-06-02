@@ -36,3 +36,33 @@ variable "igw_tags"{
     type = map
     default = {}
 }
+
+## Public subnet variables
+
+variable "public_subnet_cidrs" {
+    type = list
+    validation {
+      condition = length(var.public_subnet_cidrs) == 2
+      error_message = "Please provide 2 valid public subnet CIDR"
+    }
+  
+}
+
+variable "public_subnet_cidr_tags" {
+    type = map
+    default = {}
+}
+
+### Private Subnet ####
+variable "private_subnet_cidrs" {
+    type = list
+    validation {
+        condition = length(var.private_subnet_cidrs) == 2
+        error_message = "Please provide 2 valid private subnet CIDR"
+    }
+}
+
+variable "private_subnet_cidr_tags" {
+    type = map
+    default = {}
+}
