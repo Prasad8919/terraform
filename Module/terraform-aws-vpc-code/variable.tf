@@ -66,3 +66,42 @@ variable "private_subnet_cidr_tags" {
     type = map
     default = {}
 }
+
+### Database Subnet ####
+variable "database_subnet_cidrs" {
+    type = list
+    validation {
+        condition = length(var.database_subnet_cidrs) == 2
+        error_message = "Please database 2 valid database subnet CIDR"
+    }
+}
+
+variable "database_subnet_cidr_tags" {
+    type = map
+    default = {}
+}
+
+
+#### Nat gateway ####
+variable "nat_gateway_tags" {
+    type = map
+    default = {}
+}
+#### Public Route table ####
+variable "public_route_table_tags" {
+    type = map
+    default = {}
+}
+
+#### Public Route table ####
+variable "private_route_table_tags" {
+    type = map
+    default = {}
+}
+
+#### database Route table ####
+variable "database_route_table_tags" {
+    type = map
+    default = {}
+}
+
