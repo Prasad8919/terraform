@@ -1,6 +1,6 @@
 
 
-
+![alt text](vpc-1.jpg)
 
 
 Internet Gateway          
