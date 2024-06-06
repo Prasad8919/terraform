@@ -4,7 +4,9 @@
 
 
 VPC 
+
 Internet Gateway 
+
 Internet and VPC attachment 
 2 Public Subnets. 
 2 Private Subnes 
@@ -23,13 +25,13 @@ Database sunet group
 ### Inputs 
 
 
-project_name (Required): User should mention their project name. Type is string.   
-environment (Optional): Default value is dev. Type is string.    
-common_tags (Required): User should provide their tags related to their project. Type is map.   
-vpc_cidr (Optional): Default value is 10.0.0.0/16. Type is string.   
-enable_dns_hostnames (Optional): Default value is true. Type is bool.   
-vpc_tags (Optional): Default value is empty. Type is map.     
-igw_tags (Optional): Default value is empty. Type is map.    
+project_name (Required): User should mention their project name. Type is string.              
+environment (Optional): Default value is dev. Type is string.                    
+common_tags (Required): User should provide their tags related to their project. Type is map.                       
+vpc_cidr (Optional): Default value is 10.0.0.0/16. Type is string.                              
+enable_dns_hostnames (Optional): Default value is true. Type is bool.                                           
+vpc_tags (Optional): Default value is empty. Type is map.                             
+igw_tags (Optional): Default value is empty. Type is map.                
 public_subnet_cidrs (Required): User has to provide 2 valid subnet CIDR. 
 public_subnet_cidr_tags (Optional): Default value is empty. Type is map. 
 private_subnet_cidrs (Required): User has to provide 2 valid subnet CIDR. 
