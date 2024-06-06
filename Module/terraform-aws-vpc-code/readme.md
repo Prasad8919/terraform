@@ -19,7 +19,9 @@ Routes in all tables
 Peering if required for user
 Routes of peering in requestor and acceptor VPC.
 Database sunet group
-Inputs
+
+### Inputs
+
 project_name (Required): User should mention their project name. Type is string.
 environment (Optional): Default value is dev. Type is string.
 common_tags (Required): User should provide their tags related to their project. Type is map.
@@ -41,7 +43,9 @@ database_route_table_tags (Optional): Default value is empty. Type is map.
 is_peering_required (Optional): Default value is false. Type is bool.
 acceptor_vpc_id (Optional): Default value is empty, default VPC ID would be taken. Type is string.
 vpc_peering_tags (Optional): Default value is empty. Type is map.
-Outputs
+
+## Outputs
+
 vpc_id: VPC ID
 public_subnet_ids: A list of 2 public subnet IDS created.
 database_subnet_ids: A list of 2 database subnet IDS created.
