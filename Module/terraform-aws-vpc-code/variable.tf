@@ -80,6 +80,10 @@ variable "database_subnet_cidr_tags" {
     type = map
     default = {}
 }
+variable "database_subnet_group_tags" {
+    type = map
+    default = {}
+}
 
 
 #### Nat gateway ####
